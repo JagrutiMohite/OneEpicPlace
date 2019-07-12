@@ -1,0 +1,265 @@
+/*
+    Date Selector 
+*/
+.WeeklyViewCalendar .dateSelector {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.WeeklyViewCalendar .dateSelector .backBtn {
+    width: 70px;
+    height: 40px;
+    margin: -15px 0px 0px 0px;
+    background-color: black;
+    background-image: url("../../../../../assets/backarrow-white.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.WeeklyViewCalendar .dateSelector .date {
+    min-width: 200px;
+    width: 10%;
+    height: 40px;
+    text-align: center;
+    background: transparent;
+    border: 0;
+    border-radius: 3px;
+    font-size: 30px;
+}
+.WeeklyViewCalendar .dateSelector .hyphen {
+    display: inline-block;
+    width: 2%;
+    font-size: 40px;
+    color: black;
+}
+.WeeklyViewCalendar .dateSelector .calendarBtn {
+    width: 50px;
+    height: 40px;
+    margin-top: -15px;
+    background-color: lightgray;
+    background-image: url("../../../../../assets/calendar-white.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.WeeklyViewCalendar .dateSelector .forwardBtn {
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    margin: -15px 0px 0px 0px;
+    background-color: black;
+    background-image: url("../../../../../assets/forwardarrow-white.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*
+    Calendar
+*/
+.WeeklyViewCalendar .calendar {
+    position: relative;
+    width: 98%;
+    margin: 0px auto;
+}
+
+/*
+    Left Side Location Col
+*/
+.WeeklyViewCalendar .calendar .locationCol {
+    position: absolute;
+    width: 170px;
+}
+.WeeklyViewCalendar .calendar .locationCol .firstLocationPlaceHolder {
+    height: 60px;
+    border: 1px purple solid;
+}
+.WeeklyViewCalendar .calendar .locationCol .locationContainer {
+    float: left;
+    width: 100%;
+    height: 100px;
+    border: 1px purple solid;
+}
+.WeeklyViewCalendar .calendar .locationCol .locationContainer .location {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.WeeklyViewCalendar .calendar .locationCol .locationContainer .location .text {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    cursor: context-menu;
+}
+
+/*
+    Scrollable Calendar
+*/
+.WeeklyViewCalendar .calendar .innerSection {
+    position: absolute;
+    width: calc(100% - 170px);
+    left: 170px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.WeeklyViewCalendar .calendar .innerSection::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 3px;
+    background-color: #F5F5F5;
+}
+.WeeklyViewCalendar .calendar .innerSection::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+}
+.WeeklyViewCalendar .calendar .innerSection::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.WeeklyViewCalendar .calendar .innerSection .topRow {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+}
+.WeeklyViewCalendar .calendar .innerSection .topRow .dayContainer {
+    display: inline-block;
+    width: calc(100% / 7);
+    min-width: 170px; /* Needs updating */
+    height: 100%;
+    background-color: white;
+    border-top: 1px blue solid;
+    border-right: 1px blue solid;
+    border-bottom: 1px blue solid;
+}
+.WeeklyViewCalendar .calendar .innerSection .topRow .dayContainer .day {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.WeeklyViewCalendar .calendar .innerSection .topRow .dayContainer .day .date {
+    font-size: 25px;
+    font-weight: bold;
+    cursor: context-menu;
+}
+.WeeklyViewCalendar .calendar .innerSection .topRow .dayContainer .day .dayOfTheWeek {
+    font-size: 15px;
+    font-weight: bold;
+    cursor: context-menu;
+}
+
+.WeeklyViewCalendar .calendar .innerSection .firstRowPlaceHolder {
+    height: 60px;
+}
+
+.WeeklyViewCalendar .calendar .innerSection .calendarRow {
+    height: 100px;
+}
+.WeeklyViewCalendar .calendar .innerSection .calendarRow .block {
+    position: relative;
+    display: inline-block;
+    width: calc(100% / 7);
+    min-width: 170px; /* Needs updating */
+    height: 100%;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    border-right: 1px black solid;
+    overflow: hidden;
+}
+
+.WeeklyViewCalendar .calendar .innerSection .calendarRow .block .searchIcon {
+    position: absolute;
+    bottom: 0.5px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    text-decoration: none;
+    background-image: url("../../../../../assets/search-black.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.WeeklyViewCalendar .calendar .innerSection .calendarRow .block .searchText {
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+    padding-left: 2px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}
+.WeeklyViewCalendar .calendar .innerSection .calendarRow .block .addBtn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    border: none;
+    text-decoration: none;
+    background-color: green;
+    background-image: url("../../../../../assets/add-white.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.WeeklyViewCalendar .calendar .innerSection .calendarRow .block:hover .addBtn{
+    visibility: visible;
+}
+
+.WeeklyViewCalendar .calendar .innerSection .calendarRow .block .booking {
+    width: 100%;
+    height: 26%;
+    padding: 1%;
+    cursor: pointer;
+}
+.WeeklyViewCalendar .calendar .innerSection .calendarRow .block .booking .timeBox {
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 100%;
+    background-color: black;  /* Default color if error occurs */
+}
+.WeeklyViewCalendar .calendar .innerSection .calendarRow .block .booking .timeBox .time {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.WeeklyViewCalendar .calendar .innerSection .calendarRow .block .booking .icon {
+    position: relative;
+    float: left;
+    width: 20px;
+    height: 100%;
+    border: none;
+    text-decoration: none;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.WeeklyViewCalendar .calendar .innerSection .calendarRow .block .booking .textBox {
+    position: relative;
+    float: left;
+    width: calc(98% - 70px);
+    height: 100%;
+    margin-left: 2%;
+}
+.WeeklyViewCalendar .calendar .innerSection .calendarRow .block .booking .textBox .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
