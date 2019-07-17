@@ -22,6 +22,17 @@ app.post('/updateProfile', (req, res) => {
     );
 })
 
+//contact form about page
+app.post('/CreateAccount', (req, res) => {
+    model.CreateAccount(
+        req.body.user_userfirstname,
+        req.body.email,
+        req.body.firstName, req.body.lastName,
+        req.body.message,
+        createResult => res.send(createResult)
+    );
+})
+
 //Booking Methods
 app.post('/getLocations', (req, res) => {
     model.getLocations(

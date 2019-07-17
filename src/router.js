@@ -4,11 +4,7 @@ import Router from 'vue-router'
 //1. shaired views
 import Home from './views/1. shaired views/Home.vue'
 import About from './views/1. shaired views/About.vue'
-import Founder from './views/1. shaired views/Founder.vue'
-import Team from './views/1. shaired views/Team.vue'
-import Members from './views/1. shaired views/Members.vue'
-import Works from './views/1. shaired views/Works.vue'
-import Mission from './views/1. shaired views/Mission.vue'
+
 //2. nonuser views
 import Login from './views/2. nonuser views/Login.vue'
 
@@ -33,21 +29,7 @@ export default new Router({
         {
             path: '/about', name: 'about', component: About
         },
-        {
-            path: '/founder', name: 'founder', component: Founder
-        },
-        {
-            path: '/team', name: 'team', component: Team
-        },
-        {
-            path: '/members', name: 'members', component: Members
-        },
-        {
-            path: '/works', name: 'works', component: Works
-        },
-        {
-            path: '/mission', name: 'mission', component: Mission
-        },
+       
         //2. nonuser views
         {
             path: '/login', name: 'login', component: Login

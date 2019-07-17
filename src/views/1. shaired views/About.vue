@@ -29,36 +29,31 @@
 
     <aside class="col-md-4 blog-sidebar">
       <div class="p-4 mb-3 bg-light rounded">
-        <a href="Founder">
+        <a href="https://www.oneepicplace.com/oepfounders/" target="_blank">
         <h4 class="font-italic text-center text-primary">Founders</h4>
         <img src="http://www.oneepicplace.com/wp-content/uploads/2019/04/2015-10-16-12.46.45-2-1024x653.jpg" class="card-img" alt="...">
         </a></div>
 
         <div class="p-4 mb-3 bg-light rounded">
-        <a href="Team">
+        <a href="https://www.oneepicplace.com/epicteam/" target="_blank">
         <h4 class="font-italic text-center text-primary">EPIC Team!</h4>
         <img src="http://www.oneepicplace.com/wp-content/uploads/2018/10/IMG_20181003_211603_714.jpg" class="card-img" alt="...">
         </a></div>
  
       <div class="p-4 mb-3 bg-light rounded">
-         <a href="https://wp.me/P7By00-1oe">
+         <a href="https://www.oneepicplace.com/oepmembers/" target="_blank">
         <h4 class="font-italic text-center text-primary">Members</h4>
         <img src="http://www.oneepicplace.com/wp-content/uploads/2017/08/sdthsdthsth-2-1024x683.jpg" class="card-img" alt="...">
          </a></div>
 
-      <!--<div class="p-4 mb-3 bg-light rounded">
-         <a href="Staff">
-        <h4 class="font-italic text-center text-primary">EPIC Staff</h4>
-        <img src="http://www.oneepicplace.com/wp-content/uploads/2017/07/intern-dinner-1024x834.jpg" class="card-img" alt="...">
-         </a></div>-->
       <div class="p-4 mb-3 bg-light rounded">
-         <a href="Works">
+         <a href="https://www.oneepicplace.com/oephowitworks/" target="_blank">
         <h4 class="font-italic text-center text-primary">How It Works</h4>
         <p class="text-muted">Question:  So….what exactly is One EPIC Place?? I don’t quite get it.  (We get this question ALL the time!)</p>
        <br> <button class="btn btn-primary">View More..</button></a>
       </div>
       <div class="p-4 mb-3 bg-light rounded">
-         <a href="Mission">
+         <a href="https://www.oneepicplace.com/oepmissionandvision/" target="_blank">
         <h4 class="font-italic text-center text-primary">Mission & Vision</h4>
          <p class="text-muted">The better we each do, the better we all do.</p>
          <br> <button class="btn btn-primary">View More..</button></a>
@@ -69,15 +64,15 @@
 <div class="container mb-3">
   <h3 class="card-title text-primary">Contact</h3>
       <p class="card-text">Let's get in touch!</p>
-           <form>
+           <form  id="CreateAccount">
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputName4">First Name</label>
-      <input type="name" class="form-control" id="inputName4" placeholder="First Name">
+      <label for="inputFirstName4">First Name</label>
+      <input type="name" class="form-control" id="inputFirstName4" placeholder="First Name">
     </div>
     <div class="form-group col-md-6">
-      <label for="inputName4">Last Name</label>
-      <input type="name" class="form-control" id="inputPassword4" placeholder="Last Name">
+      <label for="inputLastName4">Last Name</label>
+      <input type="name" class="form-control" id="inputLastName4" placeholder="Last Name">
     </div>
   </div>
   <div class="form-row">
@@ -95,13 +90,13 @@
 </div>
 
         <div class="container mb-4">
-<!--Google map-->
+<!--Google map
 <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
   <iframe src="https://maps.google.com/maps/embed/ShgXYNFy5vUXyprh9" frameborder="0"
     style="border:0" allowfullscreen></iframe>
 </div>
 
-<!--Google Maps-->
+Google Maps-->
         </div>
     </div>
 </template>
@@ -112,20 +107,47 @@
 </style>
 
 <script>
-    //import * as api from '@/services/api_access';
-    import Founder from '@/views/1. shaired views/Founder.vue'
-    import Team from '@/views/1. shaired views/Team.vue'
-    import Members from '@/views/1. shaired views/Members.vue'
-    import Works from '@/views/1. shaired views/Works.vue'
-    import Mission from '@/views/1. shaired views/Mission.vue'
+    import * as api from '@/services/api_access';
 
     export default {
-        components: {
-            Founder,
-            Team,
-            Members,
-            Works,
-            Mission
+       data() {
+
+       },
+        methods: {  
+          openModal() {
+                //Fields
+                document.getElementById("inputEmail4").value = '';
+                document.getElementById("inputFirstName4").value = '';
+                document.getElementById("inputLastName4").value = '';
+                document.getElementById("inputMessage").value = '';
+            },
+            
+            CreateAccount(event) {
+                var email = document.getElementById("inputEmail4").value;
+                var firstName = document.getElementById("inputFirstName4").value;
+                var lastName = document.getElementById("inputLastName4").value;
+                var message = document.getElementById("inputMessage").value;
+                
+                api.CreateAccount( email, firstName, lastName, message).then(createResult => {
+                    if (createResult == '100') {
+                        this.closeModal();
+                        this.$parent.updateUsers();
+                    }
+                    if (createResult == '408') 
+                        this.$parent.$refs.Header.logout();
+                    else if (createResult == '409') 
+                        alert('Email is taken');
+                    else if (createResult == '410') 
+                        alert('Username is taken');
+                });
+                
+                //Prevent submit refresh
+                event.preventDefault();
+            }
+        },
+         mounted() {
+            //Listen for modal submit
+            document.getElementById('CreateAccount').addEventListener('submit', this.CreateAccount);
         }
     }
 </script>

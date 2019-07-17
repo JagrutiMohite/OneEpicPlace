@@ -13,6 +13,14 @@ export function logoutUser() {
     user = null;
 }
 
+//contact form about page
+export function CreateAccount( email, firstName, lastName, message) {
+    var user_userfirstName = user.userfirstName;
+    return myFetch(api_root + "/app/CreateAccount", {
+        user_userfirstName, email, firstName, lastName, message
+    });
+}
+
 //User Methods
 export function getAccount(identity, password) {
     return myFetch(api_root + "/app/getAccount", {
