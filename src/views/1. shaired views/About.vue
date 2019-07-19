@@ -1,65 +1,97 @@
 <template>
     <div class="About">
-        <div class="container">
-           <div class="row">
-    <div class="col-md-8 blog-main">
-      <h3 class="pb-4 mb-4 font-italic border-bottom text-primary">
-        Who Are We
-      </h3>
+        <div class="container mb-5">
+            <h2 class="pb-4 mb-4 font-italic border-bottom text-primary">
+        How it Works?
+      </h2>
+            <div class="row featurette">
+              <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+                <div class="col-md-6">
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="my-3 py-3">
+      <h3 class="display-5">A day in the life of an EPIC coworker:</h3>
+      <p>Pat comes in at 9am and smells the coffee brewing while he settles down in the hotdesk room (shared workspace).  Andie is already there typing away on her blog.  Throughout the morning and afternoon, Pat engages in conversations with Ann, Jane, and Jaime, in between working on his marketing plan… then spends some time in the conference room helping Sue with her new website.  At 12:30, before he heads to one of the treatment rooms for a massage with Sharon, he signs up for the member potluck on Friday.  After his treatment he heads to the kitchen to heat up his leftover tofu wrap, then heads to the stone porch in the back to enjoy lunch.  At 3, Pat’s kids show up for music lessons in the studio with Pete, while Betty has her coaching session with Nicole and Julie.  Before heading home at 5, Pat signs up for the workshop on how to write a killer workshop, but it’s not quite lights out for Jon Boy… because even though the day is done for Pat, the OEP night has just begun.</p>
+    </div>
+  </div>
+                </div>
+                <div class="col-md-6">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+      <h4 class="display-5">Question:  So….what exactly is One EPIC Place?? <span class="text-muted"> I don’t quite get it.  (We get this question ALL the time!)</span></h4>
+      <br><p class="lead"><span class="font-italic text-primary">Answer: </span> A Coworking Center.</p>
+      <p class="lead"><span class="font-italic text-primary">Question: </span> Uh, what is coworking?</p>
+     <p class="lead"><span class="font-italic text-primary">Quick Answer: </span> A place to do your work and only pay for the time you use.</p>
+     <p class="lead"><span class="font-italic text-primary">Long Answer: </span> A place where entrepreneurs keep the autonomy of running their own business but enjoy the benefits of working in a collaborative and communal environment.</p>
+    </div>
+  </div>
+                </div>
+</div>
+       </div>
+       <div class="row featurette">
+              <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-info mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="my-3 py-3">
+      <h3 class="display-5">Ask about our newly available full time spaces!</h3>
+      <p class="lead">But now of course, we have to explain how coworking the EPIC way is different….this is where PURPOSE comes in.  How we work at EPIC is with the intention of making each member’s experience here one that is UNIQUELY SPECIAL FOR THEM.
 
-      <div class="blog-post">
+How the hell do we do that?  We ask questions, we LISTEN, we do what we can to SUPPORT their needs.  We move a chair, buy a clock, put up shelves, scramble eggs, fluff pillows, play music, dance more, make kickass coffee and coach coach coach.
 
-        <p class="text-muted">From our humble beginning as two business/wellness coaches looking for space to conduct business, to now being a hub where a couple dozen local solopreneurs are growing their businesses and thriving, we’re proud to be a place that Empowers People and Inspires Change (EPIC).</p>
-        <p class="text-muted">One EPIC Place is an affordable, collaborative workspace, providing local businesses a flexible location and supportive community to grow their business or practice, no matter what stage of growth they are in.  We have shared workspaces, private offices and treatment rooms, workshop/conference rooms, a kitchen, studio, and a creative and fun atmosphere all under one roof offering flexible and endless opportunities for local entrepreneurs.</p>
-        <img src="http://www.oneepicplace.com/wp-content/uploads/2019/04/Screen-Shot-2019-04-30-at-3.14.40-PM.png" class="card-img" alt="...">
-       <br><br>
-        <p class="text-muted">Shared workspaces have been on the rise in recent years, but we realized there was nothing quite like this in our local community. While we enjoy providing a place where businesses can grow and network, we pay special attention to helping a rich and diverse group of solopreneurs to thrive both personally and professionally in an empowering community so they don’t have to go it alone.</p>
-        
-        <p class="text-muted">One EPIC Place is much more than just a space to rent or work occasionally. Our collaborative environment is overflowing with the resources, inspiration, and structure needed to be a successful entrepreneur. We support and guide our members, promote their businesses, offer sources for networking and growth, hold workshops and meetings for support, serve as accountability partners, provide the necessary tools they need for them and their businesses. We offer solopreneurs the infrastructure to grow their business and the ability to tap into the resources in their community.</p>
-       
-        <p class="text-muted">Our mission and vision have grown substantially from our initial small location behind the New Paltz Chamber of Commerce office. Our purpose and place in this community is bigger than we knew. Our collective backgrounds, education and experiences, mixed with our strong desire to help others find and live their purpose and to grow community, are part of the foundation of One EPIC Place.</p>
-        
-        <p class="text-muted">OEP members offer services such as nutritional and wellness coaching, massage, music lessons, art therapy, body and energy work, many healing modalities, cooking classes, meditation workshops, yoga, advocacy for children with special needs, qi gong, business coaching, tech therapy, marketing, public relations, web design, community events, and so much more.</p>
-        <p class="text-muted">Membership packages give access to members to book private rooms, hot desk spaces, workshop rooms, and the kitchen. Amenities include all utilities, wifi, coffee/tea, member rates for coaching with co-founders Julie and Nicole, use of our Main St. address, parking, and a discounted membership to the New Paltz Regional Chamber Commerce.</p>
-      </div>
+Book the use of Private Rooms, Hot Desk space, Workshop Rooms, and Kitchen. All utilities included, WiFi, coffee/tea, member rates for coaching with Julie and Nicole, use of Main Street address, parking and more. <a href="#" class="text-dark">Member and Non-Member Rates available.</a>
 
+Gain access to community, coaching, training, open house, kid’s day, and other awesome events!
+
+ </p>
+    </div>
+  </div>
+</div>
+       </div>
+       <br>
+       <div class="row featurette">
+         <h2 class="text-primary">Let’s Talk Specifics</h2>
+              <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+                <div class="col-md-6">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-dark overflow-hidden">
+    <div class="my-3 py-3">
+      <h3 class="display-5 text-center">What we offer:</h3>
+      <p class="text-muted"><ul>
+        <li>office spaces, treatment rooms, studio, small workshop space</li>
+        <li>large workshop/conference room</li>
+        <li>fully equipped kitchen</li>
+        <li>WiFi throughout the building</li>
+        <li>waiting area</li>
+        <li>free off-street parking</li>
+        <li>use of Main Street business address</li>
+        <li>printer/copier/scanner</li>
+        <li>private lockers</li>
+        <li>utilities (heat & electric)</li>
+        <li>2 bathrooms, including handicap accessible bathroom</li>
+        <li>built-in referral network</li>
+        <li>EPIC coaching</li>
+        <li>resources, training and workshops</li>
+        <li>an awesome community of solopreneurs</li>
+        </ul>
+        <button class="btn btn-dark">CHECK OUT OUR SPACES</button>
+        </p>
+    </div>
+  </div>
+                </div>
+                <div class="col-md-6">
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="my-3 p-3">
+      <h4 class="display-5">  Who’s a good fit?</h4>
       <br>
-
-      </div><!-- /.blog-post -->
-
-    <aside class="col-md-4 blog-sidebar">
-      <div class="p-4 mb-3 bg-light rounded">
-        <a href="https://www.oneepicplace.com/oepfounders/" target="_blank">
-        <h4 class="font-italic text-center text-primary">Founders</h4>
-        <img src="http://www.oneepicplace.com/wp-content/uploads/2019/04/2015-10-16-12.46.45-2-1024x653.jpg" class="card-img" alt="...">
-        </a></div>
-
-        <div class="p-4 mb-3 bg-light rounded">
-        <a href="https://www.oneepicplace.com/epicteam/" target="_blank">
-        <h4 class="font-italic text-center text-primary">EPIC Team!</h4>
-        <img src="http://www.oneepicplace.com/wp-content/uploads/2018/10/IMG_20181003_211603_714.jpg" class="card-img" alt="...">
-        </a></div>
- 
-      <div class="p-4 mb-3 bg-light rounded">
-         <a href="https://www.oneepicplace.com/oepmembers/" target="_blank">
-        <h4 class="font-italic text-center text-primary">Members</h4>
-        <img src="http://www.oneepicplace.com/wp-content/uploads/2017/08/sdthsdthsth-2-1024x683.jpg" class="card-img" alt="...">
-         </a></div>
-
-      <div class="p-4 mb-3 bg-light rounded">
-         <a href="https://www.oneepicplace.com/oephowitworks/" target="_blank">
-        <h4 class="font-italic text-center text-primary">How It Works</h4>
-        <p class="text-muted">Question:  So….what exactly is One EPIC Place?? I don’t quite get it.  (We get this question ALL the time!)</p>
-       <br> <button class="btn btn-primary">View More..</button></a>
-      </div>
-      <div class="p-4 mb-3 bg-light rounded">
-         <a href="https://www.oneepicplace.com/oepmissionandvision/" target="_blank">
-        <h4 class="font-italic text-center text-primary">Mission & Vision</h4>
-         <p class="text-muted">The better we each do, the better we all do.</p>
-         <br> <button class="btn btn-primary">View More..</button></a>
-      </div>
-    </aside>
-           </div>
+      <p>Our space is great for business professionals, holistic & wellness practitioners, creative professionals and others looking to work in an inspiring and creative, co-working space. Our space allows for one on one client sessions, small & large workshops, private office, private treatment sessions, collaborative desk space and events.
+</p>
+<br>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center  text-dark overflow-hidden ">
+      <p class="text-muted">"This is the most supportive wonderful place I have been a part of! I’m so honored to be able to work here."</p>
+      <p class="text-muted">- Nicole Jurain</p>
+  </div>
+    </div>
+  </div>
+                </div>
+</div>
+       </div>
         </div>
 <div class="container mb-3">
   <h3 class="card-title text-primary">Contact</h3>
@@ -97,6 +129,7 @@
 </div>
 
 Google Maps-->
+
         </div>
     </div>
 </template>

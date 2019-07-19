@@ -12,50 +12,50 @@
         </div>
       </div>
         </div>
-<div class="container mt-5 animated fadeInLeft">
+<div class="container mt-5">
 <div class="card-deck">
   <div class="card border-primary mb-3">
-    <img class="card-img-top" src="https://i2.wp.com/www.oneepicplace.com/wp-content/uploads/2016/04/ONEEIPCPLACE-LOGO-ICON-e1488577070933.png?w=1080&ssl=1" alt="Card image cap">
-    <hr>
+    <!--<img class="card-img-top" src="https://i2.wp.com/www.oneepicplace.com/wp-content/uploads/2016/04/ONEEIPCPLACE-LOGO-ICON-e1488577070933.png?w=1080&ssl=1" alt="Card image cap">
+    <hr>-->
     <div class="card-body">
-      <h5 class="card-title text-primary">WHAT IS OEP?</h5>
-      <p class="card-text">Learn a little bit about the company.</p>
+      <h3 class="card-title text-primary text-center">STORE</h3>
+      <p class="card-text">Choose your purches plans</p>
     </div>
     <div class="card-footer bg-transparent border-primary">
-      <a class="btn btn-lg btn-primary" role="button" href="https://www.oneepicplace.com/oepwhatisoep/" target="_blank">View More..</a>
+      <a class="btn btn-lg btn-primary" role="button" href="#" target="_blank">View More..</a>
     </div>
   </div>
   <div class="card border-success mb-3">
-    <img class="card-img-top" src="http://www.oneepicplace.com/wp-content/uploads/2017/07/who.png" alt="Card image cap">
-    <hr>
+    <!--<img class="card-img-top" src="http://www.oneepicplace.com/wp-content/uploads/2017/07/who.png" alt="Card image cap">
+    <hr>-->
     <div class="card-body">
-      <h5 class="card-title text-success">WHO ARE WE?</h5>
-      <p class="card-text">Learn about the Ladies that make this Epic Place run.</p>
+      <h3 class="card-title text-success text-center">HELP DESK</h3>
+      <p class="card-text text-center">Find any problems click here</p>
     </div>
     <div class="card-footer bg-transparent border-success">
-      <a class="btn btn-lg btn-success" role="button" href="About" target="_blank">View More..</a>
+      <a class="btn btn-lg btn-success" role="button" href="#" target="_blank">View More..</a>
     </div>
   </div>
   <div class="card border-secondary mb-3">
-    <img class="card-img-top" src="http://www.oneepicplace.com/wp-content/uploads/2017/07/events.png" alt="Card image cap">
-    <hr>
+    <!--<img class="card-img-top" src="http://www.oneepicplace.com/wp-content/uploads/2017/07/events.png" alt="Card image cap">
+    <hr>-->
     <div class="card-body">
-      <h5 class="card-title text-secondary">EPIC EVENTS</h5>
-      <p class="card-text">Check out our calendar of EPIC events open to the public!</p>
+      <h3 class="card-title text-secondary text-center">BENEFITS</h3>
+      <p class="card-text text-center">Check out our Members Benefits here</p>
     </div>
     <div class="card-footer bg-transparent border-secondary">
-      <a class="btn btn-lg btn-secondary" role="button" href="https://www.oneepicplace.com/events/" target="_blank">View More..</a>
+      <a class="btn btn-lg btn-secondary" role="button" href="#" target="_blank">View More..</a>
     </div>
   </div>
    <div class="card border-info mb-3">
-    <img class="card-img-top" src="http://www.oneepicplace.com/wp-content/uploads/2019/03/oneepicplace-1017x1024.png" alt="Card image cap">
-    <hr>
+    <!--<img class="card-img-top" src="http://www.oneepicplace.com/wp-content/uploads/2019/03/oneepicplace-1017x1024.png" alt="Card image cap">
+    <hr>-->
     <div class="card-body">
-      <h5 class="card-title text-info">NEED SPACE?</h5>
-      <p class="card-text">Check out our Epic Spaces.</p>
+      <h3 class="card-title text-info text-center">MEMBERS CALENDER</h3>
+      <p class="card-text text-center">Look Members Calender here.</p>
     </div>
     <div class="card-footer bg-transparent border-info">
-      <a class="btn btn-lg btn-info" role="button" href="https://www.oneepicplace.com/oepneedspace/" target="_blank">View More..</a>
+      <a class="btn btn-lg btn-info" role="button" href="#" target="_blank">View More..</a>
     </div>
   </div>
 </div>
@@ -108,23 +108,62 @@ Concierge, Castillon Lifestyle</h6>
 </div>
 </div>
     </div>
-</div>
     </div>
+    <div class="container">
+      <div class="fixed-bottom">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Live Chat</button>
+    </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 </template>
 
 <style scoped lang="scss">
     //Personal CSS
     @import "css/Home.css";
-    @import "/bootstrap/3.2.0/css/bootstrap.min.css"
+    @import "/bootstrap/3.2.0/css/bootstrap.min.css";
+  .fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 10px;
+  left: 1500px;
+  z-index: 1030;
+  }
+    
 </style>
 
 <script>
     //import * as api from '@/services/api_access';
-    import About from '@/views/1. shaired views/About.vue'
+
 
     export default {
-      components: {
-            About
-        }
+      
     }
 </script>

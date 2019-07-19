@@ -34,3 +34,9 @@
     font-size: 1.8em;
   }
 }
+@media (max-width: 768px)
+{
+.fixed-bottom {
+  left: 1050px;
+}
+}
