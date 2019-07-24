@@ -4,7 +4,9 @@ import Router from 'vue-router'
 //1. shaired views
 import Home from './views/1. shaired views/Home.vue'
 import About from './views/1. shaired views/About.vue'
-
+import Benefits from './views/1. shaired views/Benefits.vue'
+import Helpdesk from '@/views/1. shaired views/Helpdesk.vue'
+import Store from '@/views/1. shaired views/Store.vue'
 //2. nonuser views
 import Login from './views/2. nonuser views/Login.vue'
 
@@ -29,7 +31,15 @@ export default new Router({
         {
             path: '/about', name: 'about', component: About
         },
-       
+        {
+            path: '/benefits', name: 'benefits', component: Benefits
+        },
+        {
+            path: '/helpdesk', name: 'helpdesk', component: Helpdesk
+        },
+        {
+            path: '/store', name: 'store', component: Store
+        },
         //2. nonuser views
         {
             path: '/login', name: 'login', component: Login

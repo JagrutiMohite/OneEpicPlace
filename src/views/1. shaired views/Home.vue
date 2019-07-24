@@ -1,6 +1,6 @@
 <template>
     <div class="Home mt-5">
-    <div class="banner">
+    <!--<div class="banner">
       <div class="container-fluid">
     <div class="row">
       <div class="col-md-1"></div>
@@ -11,7 +11,7 @@
           </div>
         </div>
       </div>
-        </div>
+        </div>-->
 <div class="container mt-5">
 <div class="card-deck">
   <div class="card border-primary mb-3">
@@ -22,7 +22,7 @@
       <p class="card-text">Choose your purches plans</p>
     </div>
     <div class="card-footer bg-transparent border-primary">
-      <a class="btn btn-lg btn-primary" role="button" href="#" target="_blank">View More..</a>
+      <a class="btn btn-lg btn-primary" role="button" href="Store" target="_blank">View More..</a>
     </div>
   </div>
   <div class="card border-success mb-3">
@@ -33,7 +33,7 @@
       <p class="card-text text-center">Find any problems click here</p>
     </div>
     <div class="card-footer bg-transparent border-success">
-      <a class="btn btn-lg btn-success" role="button" href="#" target="_blank">View More..</a>
+      <a class="btn btn-lg btn-success" role="button" href="Helpdesk" target="_blank">View More..</a>
     </div>
   </div>
   <div class="card border-secondary mb-3">
@@ -44,7 +44,7 @@
       <p class="card-text text-center">Check out our Members Benefits here</p>
     </div>
     <div class="card-footer bg-transparent border-secondary">
-      <a class="btn btn-lg btn-secondary" role="button" href="#" target="_blank">View More..</a>
+      <a class="btn btn-lg btn-secondary" role="button" href="Benefits" target="_blank">View More..</a>
     </div>
   </div>
    <div class="card border-info mb-3">
@@ -161,8 +161,7 @@ Concierge, Castillon Lifestyle</h6>
 
 <script>
     //import * as api from '@/services/api_access';
-
-
+    
     export default {
       
     }
