@@ -7,6 +7,7 @@ import About from './views/1. shaired views/About.vue'
 import Benefits from './views/1. shaired views/Benefits.vue'
 import Helpdesk from '@/views/1. shaired views/Helpdesk.vue'
 import Store from '@/views/1. shaired views/Store.vue'
+import Members from '@/views/1. shaired views/Members.vue'
 //2. nonuser views
 import Login from './views/2. nonuser views/Login.vue'
 
@@ -39,6 +40,9 @@ export default new Router({
         },
         {
             path: '/store', name: 'store', component: Store
+        },
+        {
+            path: '/members', name: 'members', component: Members
         },
         //2. nonuser views
         {

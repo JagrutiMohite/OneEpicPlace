@@ -55,7 +55,7 @@
       <p class="card-text text-center">Look Members Calender here.</p>
     </div>
     <div class="card-footer bg-transparent border-info">
-      <a class="btn btn-lg btn-info" role="button" href="#" target="_blank">View More..</a>
+      <a class="btn btn-lg btn-info" role="button" href="Members" target="_blank">View More..</a>
     </div>
   </div>
 </div>

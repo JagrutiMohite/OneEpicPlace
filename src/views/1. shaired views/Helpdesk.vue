@@ -90,7 +90,7 @@
        </div>
         
   <div class="container">
-    	<div class="row no-gutters">
+    <div class="row no-gutters">
     <div class="col-md-2">
       <span class="text-muted">Tickets</span>
         <i class="fa fa-code fa-2x"></i>
@@ -132,7 +132,7 @@
   </div>
 </div>
     </div>
-    	</div>
+    </div>
   </div>
         </div>
         <div class="container mb-5">
