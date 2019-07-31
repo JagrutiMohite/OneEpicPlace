@@ -8,6 +8,8 @@ import Benefits from './views/1. shaired views/Benefits.vue'
 import Helpdesk from '@/views/1. shaired views/Helpdesk.vue'
 import Store from '@/views/1. shaired views/Store.vue'
 import Members from '@/views/1. shaired views/Members.vue'
+import Barter from '@/views/1. shaired views/Barter.vue'
+
 //2. nonuser views
 import Login from './views/2. nonuser views/Login.vue'
 
@@ -43,6 +45,9 @@ export default new Router({
         },
         {
             path: '/members', name: 'members', component: Members
+        },
+        {
+            path: '/barter', name: 'barter', component: Barter
         },
         //2. nonuser views
         {
