@@ -1,22 +1,10 @@
 <template>
     <div class="Home mt-5">
-    <!--<div class="banner">
-      <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-6">
-            <h1>INTENTIONAL BUSINESS COMMUNITY</h1>
-            <p>One EPIC Place is all about COMMUNITY! We seek to make having a spot for your business affordable and within reach!</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">WHAT IS CO-WORKING?</a></p>
-          </div>
-        </div>
-      </div>
-        </div>-->
+
 <div class="container mt-5">
 <div class="card-deck">
   <div class="card border-primary mb-3">
-    <!--<img class="card-img-top" src="https://i2.wp.com/www.oneepicplace.com/wp-content/uploads/2016/04/ONEEIPCPLACE-LOGO-ICON-e1488577070933.png?w=1080&ssl=1" alt="Card image cap">
-    <hr>-->
+   
     <div class="card-body">
       <h3 class="card-title text-primary text-center">STORE</h3>
       <p class="card-text">Choose your purches plans</p>
@@ -26,8 +14,7 @@
     </div>
   </div>
   <div class="card border-success mb-3">
-    <!--<img class="card-img-top" src="http://www.oneepicplace.com/wp-content/uploads/2017/07/who.png" alt="Card image cap">
-    <hr>-->
+   
     <div class="card-body">
       <h3 class="card-title text-success text-center">HELP DESK</h3>
       <p class="card-text text-center">Find any problems click here</p>
@@ -37,8 +24,7 @@
     </div>
   </div>
   <div class="card border-secondary mb-3">
-    <!--<img class="card-img-top" src="http://www.oneepicplace.com/wp-content/uploads/2017/07/events.png" alt="Card image cap">
-    <hr>-->
+   
     <div class="card-body">
       <h3 class="card-title text-secondary text-center">BENEFITS</h3>
       <p class="card-text text-center">Check out our Members Benefits here</p>
@@ -48,8 +34,7 @@
     </div>
   </div>
    <div class="card border-info mb-3">
-    <!--<img class="card-img-top" src="http://www.oneepicplace.com/wp-content/uploads/2019/03/oneepicplace-1017x1024.png" alt="Card image cap">
-    <hr>-->
+    
     <div class="card-body">
       <h3 class="card-title text-info text-center">MEMBERS CALENDER</h3>
       <p class="card-text text-center">Look Members Calender here.</p>
@@ -111,7 +96,7 @@ Concierge, Castillon Lifestyle</h6>
     </div>
     <div class="container">
       <div class="fixed-bottom">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Live Chat</button>
+    <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Drop A Message</button>
     </div>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -153,11 +138,10 @@ Concierge, Castillon Lifestyle</h6>
   position: fixed;
   right: 0;
   bottom: 10px;
-  left: 1500px;
+  left: 1450px;
   z-index: 1030;
   }
-    
-</style>
+</style>  
 
 <script>
     //import * as api from '@/services/api_access';
